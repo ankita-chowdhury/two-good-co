@@ -154,9 +154,9 @@ body{
 #page2 .elem #dets-3{
     background-color: #FFFFFF;
 }
-/* #page2 .elem .dets:hover{
+#page2 .elem .dets:hover{
     height: 200px;
-} */
+}
 #page3{
     min-height: 120vh;
     width: 100%;
