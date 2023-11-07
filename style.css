@@ -16,6 +16,8 @@ html,body{
 }
 body{
     background-color: #F7F7F7;
+    padding-bottom: 5rem !important;
+    margin-bottom: 5rem !important;
 }
 #nav{
     /* height: 100px; */
@@ -55,12 +57,13 @@ body{
     font-size: 14px;
     margin: 0 20px;
     opacity: 1;
-    transition: opacity 0.2s ease-out;
+    
 }
 #nav-part2 #links a:hover{
     text-decoration: underline;
     font-weight: 100;
     color: #9b9b9b;
+    transition: opacity 0.2s ease-out;
 }
 
 #nav-part2 #icons i{
@@ -267,6 +270,7 @@ body{
     flex-wrap: wrap;
     /* background-color: #F7F7F7; */
 }
+
 .child{
     height: 38rem;
     width: 38rem;
@@ -289,6 +293,7 @@ body{
 } */
 .child .child-dollar{
     padding: 5px;
+    margin-bottom: 40px;
 }
 
 @media (max-width:600px){
@@ -392,7 +397,10 @@ body{
         align-items: center;
         justify-content: space-evenly;
         flex-wrap: wrap;
+        /* border: 1px solid red; */
         /* background-color: #F7F7F7; */
+        padding-bottom: 5rem !important;
+        margin-bottom: 5rem !important;
     }
     .child{
         height: 54vh;
