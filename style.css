@@ -54,7 +54,15 @@ body{
     font-weight: 500;
     font-size: 14px;
     margin: 0 20px;
+    opacity: 1;
+    transition: opacity 0.2s ease-out;
 }
+#nav-part2 #links a:hover{
+    text-decoration: underline;
+    font-weight: 100;
+    color: #9b9b9b;
+}
+
 #nav-part2 #icons i{
     font-size: 18px;
     margin: 0 20px;
@@ -74,7 +82,7 @@ body{
 }
 
 #page1{
-    min-height: 100vh;
+    height: 100%;
     position: relative;
     width: 100%;
     padding: 0 1vw;
@@ -112,7 +120,7 @@ body{
     scale: 0;
 }
 #page2{
-  min-height: 100vh;
+    height: 100%;
     width: 100%;
     position: relative;
     display: flex;
@@ -140,25 +148,117 @@ body{
     height: 60px;
     border-radius: 50px;
     width: 70%;
+    overflow: hidden;
+    top: 50%;
     position: absolute;
     z-index: 9;
     background-color: palegoldenrod;
+    transition: 0.2s;
+    
 }
 #page2 .elem #dets-1{
-    background-color: #F5DFCF;
+    background-color: #E5F0D6;
 }
 #page2 .elem #dets-2{
-    background-color: #E5F0D6;
+    background-color: #F5DFCF;
     
 }
 #page2 .elem #dets-3{
     background-color: #FFFFFF;
 }
+#page2 .elem .dets .dets-items{
+    padding: 23px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+    font-family: futura;
+    font-size: small;
+    /* overflow: hidden; */
+}
+/* #page2 .elem .dets .hover-effect-dets{
+    display: none;
+} */
+
+.hover-effect-dets{
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+/* .hover-effect-dets .item1 img{
+    height: 100%;
+}
+.hover-effect-dets .item2 img{
+    height: 100%;
+    
+    
+} */
+.dets-1-img{
+    height: 7rem !important;
+    width: 4rem !important;
+    
+}
+.dets-2-img{
+    height: 5rem!important;
+    width: 5rem!important;
+}
+.dets-2-candle-img{
+    height: 7rem !important;
+    width: 4rem !important;
+    top: 40% !important;;
+}
+.item-1,.item-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item-1-text{
+    font-family: Gilroy;
+    font-size: 0.75rem !important;
+    width: 8rem !important;
+    margin-top: 5px;
+    text-transform: uppercase;
+    /* font-weight: 550; */
+    
+}
+.item-2-text{
+    font-family: Gilroy;
+    font-size: 0.75rem !important;
+    width: 8rem !important;
+    margin-top: 15px;
+    padding: 18px;
+    text-transform: uppercase;
+}
+.item-2-candle-text{
+    font-family: Gilroy;
+    font-size: 0.75rem !important;
+    width: 8rem !important;
+    margin-top: 7px;
+    
+    text-transform: uppercase;
+}
+
 #page2 .elem .dets:hover{
-    height: 200px;
+    height: 240px;
+    display: block;
+    opacity: 1;
+    border-radius: 50px;
+    
+}
+#page2 .elem .dot{
+    width: 8px;
+    height: 8px;
+    background: #000;
+    border-radius: 50%;
+}
+#page2 .elem .messina{
+    font-weight: 900;
 }
 #page3{
-    min-height: 120vh;
+    height: 100%;
     width: 100%;
     position: relative;
     display: flex;
@@ -168,15 +268,27 @@ body{
     /* background-color: #F7F7F7; */
 }
 .child{
-    height: 54vh;
-    width: 38vw;
+    height: 38rem;
+    width: 38rem;
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+
 }
 .child img{
     height: 100%;
+    padding: 5px;
+}
+/* #child3{
+    border: 1px solid red;
+} */
+/* .child .child-text{
+    padding: 10px;
+} */
+.child .child-dollar{
+    padding: 5px;
 }
 
 @media (max-width:600px){
